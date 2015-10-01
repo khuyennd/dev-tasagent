@@ -106,6 +106,7 @@ Description: display weather -->
 <!-- left navigation end -->
 
 <!-- include flatWeatherPlugin.js -->
+{literal}
 <script src="themes/default/js/jquery.flatWeatherPlugin.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
@@ -119,6 +120,7 @@ Description: display weather -->
         });
     });
 </script>
+{/literal}
 <!-- end display weather -->
 
 
