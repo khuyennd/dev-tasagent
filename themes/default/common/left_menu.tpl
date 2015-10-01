@@ -66,7 +66,7 @@
                     </ul>
                 </div>
                 {if $cookie->RoleID >1}
-                <div class="sub_navi_outer">
+                <div class="sub_navi_outer chienva">
                     <p class="navi_title">{l s='Popular Area'}</p>
                     <ul>
                     {foreach from=$popAreaList item=item}
