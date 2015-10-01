@@ -15,10 +15,7 @@ if (!defined('PHP_VERSION_ID'))
     define('PHP_VERSION_ID', ($version[0] * 10000 + $version[1] * 100 + $version[2]));
 }
 
-define('__TAS_BASE_URI__', '/tas-agent/');
-//define('__TAS_BASE_URI__', '52.69.254.78/tas-agent/');
-//echo __TAS_BASE_URI__;
-//define('__TAS_BASE_URI__', 'http://localhost/tas/');
+define('__TAS_BASE_URI__', '/');
 /* Theme URLs */
 define('_THEME_DIR_',     __TAS_BASE_URI__.'themes/default/');
 define('_THEME_IMG_DIR_',  _THEME_DIR_.'img/');
