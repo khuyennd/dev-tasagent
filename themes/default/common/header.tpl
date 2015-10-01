@@ -81,11 +81,11 @@
                      {l s='Hi,'}{$cookie->Name}
                 {/if}
                 &nbsp;|&nbsp;
-                <a href="/tas-agent/index.php">{l s='Top Page'}</a><span>&nbsp;|&nbsp;</span>
-                <a href="/tas-agent/index.php?mylogout">{l s='Sign Out'}</a>
+                <a href="/index.php">{l s='Top Page'}</a><span>&nbsp;|&nbsp;</span>
+                <a href="/index.php?mylogout">{l s='Sign Out'}</a>
 				{if $cookie->OldLoginUserName != NULL}
 				&nbsp;|&nbsp;
-                <a href="/tas-agent/login.php?changeback=1">{l s='Change Back'}</a>
+                <a href="/login.php?changeback=1">{l s='Change Back'}</a>
                 {/if}
             </div>  
     	</div>
