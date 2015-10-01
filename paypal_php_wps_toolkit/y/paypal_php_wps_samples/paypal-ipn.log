@@ -1,0 +1,431 @@
+****************************************************************************************************
+09 Apr 2013 18:16:45 [IPNListner.php] Received IPN,  TX ID : 59V85525RS287603W
+09 Apr 2013 18:16:45 [IPNListner.php] Sending IPN values:
+mc_gross=399
+protection_eligibility=Eligible
+address_status=confirmed
+payer_id=UBE9PUHABZ6BC
+tax=0
+address_street=1 Main St
+payment_date=02:16:40 Apr 09, 2013 PDT
+payment_status=Pending
+charset=windows-1252
+address_zip=95131
+first_name=zhang
+address_country_code=US
+address_name=zhang yang
+notify_version=3.7
+custom=
+payer_status=verified
+business=takaya.tomose-facilitator@tas-japan.net
+address_country=United States
+address_city=San Jose
+quantity=1
+verify_sign=A1a3MuLmFhommx782nzKl0ROT.OaA2Ehp877mRJFk4HT6nx3HAmK5Umg
+payer_email=zhangyang@osbay.com
+txn_id=59V85525RS287603W
+payment_type=instant
+last_name=yang
+address_state=CA
+receiver_email=takaya.tomose-facilitator@tas-japan.net
+receiver_id=DLQJBEW3NG59Y
+pending_reason=multi_currency
+txn_type=web_accept
+item_name=SIGMA SD1000
+mc_currency=JPY
+item_number=
+residence_country=US
+test_ipn=1
+handling_amount=0
+transaction_subject=SIGMA SD1000
+payment_gross=
+shipping=0
+ipn_track_id=5b989e81ae96d
+cmd=_notify-validate
+--------------------
+09 Apr 2013 18:16:47 [IPNListner.php] IPN Post Response:
+VERIFIED
+****************************************************************************************************
+10 Apr 2013 11:49:57 [IPNListner.php] Received IPN,  TX ID : 5S108981K6229491N
+10 Apr 2013 11:49:57 [IPNListner.php] Sending IPN values:
+mc_gross=399
+protection_eligibility=Eligible
+address_status=confirmed
+payer_id=WCVNGLKEC42QA
+tax=0
+address_street=1 Main St
+payment_date=19:49:52 Apr 09, 2013 PDT
+payment_status=Pending
+charset=windows-1252
+address_zip=95131
+first_name=z
+address_country_code=US
+address_name=z y
+notify_version=3.7
+custom=
+payer_status=verified
+business=zhangyanghy-facilitator@yahoo.com.cn
+address_country=United States
+address_city=San Jose
+quantity=1
+verify_sign=AV5qK2er5wARW5yDGOxHhUSfVtTwAWp6MCJXAvP0.F-AHcQgyBX6hfR7
+payer_email=zhangyanghy@yahoo.com
+txn_id=5S108981K6229491N
+payment_type=instant
+last_name=y
+address_state=CA
+receiver_email=zhangyanghy-facilitator@yahoo.com.cn
+receiver_id=AKQ4R6R925MTY
+pending_reason=multi_currency
+txn_type=web_accept
+item_name=SIGMA SD1000
+mc_currency=JPY
+item_number=
+residence_country=US
+test_ipn=1
+handling_amount=0
+transaction_subject=SIGMA SD1000
+payment_gross=
+shipping=0
+ipn_track_id=28188c78acd5e
+cmd=_notify-validate
+--------------------
+10 Apr 2013 11:49:58 [IPNListner.php] IPN Post Response:
+VERIFIED
+****************************************************************************************************
+10 Apr 2013 11:57:59 [IPNListner.php] Received IPN,  TX ID : 968012862L420221D
+10 Apr 2013 11:57:59 [IPNListner.php] Sending IPN values:
+mc_gross=399
+protection_eligibility=Partially Eligible - INR Only
+address_status=unconfirmed
+payer_id=NQR99XPZPKJLW
+tax=0
+address_street=Nishi 4-chome, Kita 55-jo, Kita-ku
+payment_date=19:57:56 Apr 09, 2013 PDT
+payment_status=Pending
+charset=windows-1252
+address_zip=150-0002
+first_name=zhang
+address_country_code=JP
+address_name=zhang yang
+notify_version=3.7
+custom=
+payer_status=unverified
+business=zhangyanghy-facilitator@yahoo.com.cn
+address_country=Japan
+address_city=Shibuya-ku
+quantity=1
+verify_sign=Aa5iWrWJooZDE6A2Cmtc1vbaR.bNA19hSwlzeR5cxnKZ6DoDSGQ9fVqp
+payer_email=zhangyanghy@hotmail.com
+txn_id=968012862L420221D
+payment_type=instant
+last_name=yang
+address_state=Tokyo
+receiver_email=zhangyanghy-facilitator@yahoo.com.cn
+receiver_id=AKQ4R6R925MTY
+pending_reason=multi_currency
+txn_type=web_accept
+item_name=SIGMA SD1000
+mc_currency=JPY
+item_number=
+residence_country=JP
+test_ipn=1
+handling_amount=0
+transaction_subject=SIGMA SD1000
+payment_gross=
+shipping=0
+ipn_track_id=55c6e54210ea4
+cmd=_notify-validate
+--------------------
+10 Apr 2013 11:58:01 [IPNListner.php] IPN Post Response:
+VERIFIED
+****************************************************************************************************
+10 Apr 2013 12:15:59 [IPNListner.php] Received IPN,  TX ID : 6BB37666BC770511L
+10 Apr 2013 12:15:59 [IPNListner.php] Sending IPN values:
+mc_gross=399
+protection_eligibility=Partially Eligible - INR Only
+address_status=unconfirmed
+payer_id=8F3BTEE9XTVK4
+tax=0
+address_street=Nishi 4-chome, Kita 55-jo, Kita-ku
+payment_date=20:15:57 Apr 09, 2013 PDT
+payment_status=Pending
+charset=windows-1252
+address_zip=150-0002
+first_name=test
+address_country_code=JP
+address_name=test test
+notify_version=3.7
+custom=
+payer_status=unverified
+business=zhangyanghy-facilitator@yahoo.com.cn
+address_country=Japan
+address_city=Shibuya-ku
+quantity=1
+verify_sign=AQU0e5vuZCvSg-XJploSa.sGUDlpAXUl.vh2GYxVrAaSlShQuF5FFjw5
+payer_email=zy@osbay.com
+txn_id=6BB37666BC770511L
+payment_type=instant
+last_name=test
+address_state=Tokyo
+receiver_email=zhangyanghy-facilitator@yahoo.com.cn
+receiver_id=AKQ4R6R925MTY
+pending_reason=multi_currency
+txn_type=web_accept
+item_name=SIGMA SD1000
+mc_currency=JPY
+item_number=
+residence_country=JP
+test_ipn=1
+handling_amount=0
+transaction_subject=SIGMA SD1000
+payment_gross=
+shipping=0
+ipn_track_id=728331a34bc08
+cmd=_notify-validate
+--------------------
+10 Apr 2013 12:16:01 [IPNListner.php] IPN Post Response:
+VERIFIED
+****************************************************************************************************
+10 Apr 2013 12:41:09 [IPNListner.php] Received IPN,  TX ID : 6BB37666BC770511L
+10 Apr 2013 12:41:09 [IPNListner.php] Sending IPN values:
+mc_gross=399
+settle_amount=2.81
+protection_eligibility=Partially Eligible - INR Only
+address_status=unconfirmed
+payer_id=8F3BTEE9XTVK4
+tax=0
+address_street=Nishi 4-chome, Kita 55-jo, Kita-ku
+payment_date=20:15:57 Apr 09, 2013 PDT
+payment_status=Completed
+charset=windows-1252
+address_zip=150-0002
+first_name=test
+mc_fee=56
+address_country_code=JP
+exchange_rate=0.00819241
+address_name=test test
+notify_version=3.7
+settle_currency=USD
+custom=
+payer_status=unverified
+business=zhangyanghy-facilitator@yahoo.com.cn
+address_country=Japan
+address_city=Shibuya-ku
+quantity=1
+verify_sign=Asd2.KtI3DSVPkUWFFj0dMzyrYaKAoWJaXAKJz3rE3RWfc-FtqJVR.Jf
+payer_email=zy@osbay.com
+txn_id=6BB37666BC770511L
+payment_type=instant
+last_name=test
+address_state=Tokyo
+receiver_email=zhangyanghy-facilitator@yahoo.com.cn
+payment_fee=
+receiver_id=AKQ4R6R925MTY
+txn_type=web_accept
+item_name=SIGMA SD1000
+mc_currency=JPY
+item_number=
+residence_country=JP
+test_ipn=1
+handling_amount=0
+transaction_subject=SIGMA SD1000
+payment_gross=
+shipping=0
+ipn_track_id=3d52176da216a
+cmd=_notify-validate
+--------------------
+10 Apr 2013 12:41:11 [IPNListner.php] IPN Post Response:
+VERIFIED
+****************************************************************************************************
+10 Apr 2013 12:49:36 [IPNListner.php] Received IPN,  TX ID : 968012862L420221D
+10 Apr 2013 12:49:36 [IPNListner.php] Sending IPN values:
+mc_gross=399
+protection_eligibility=Partially Eligible - INR Only
+address_status=unconfirmed
+payer_id=NQR99XPZPKJLW
+tax=0
+address_street=Nishi 4-chome, Kita 55-jo, Kita-ku
+payment_date=19:57:56 Apr 09, 2013 PDT
+payment_status=Completed
+charset=windows-1252
+address_zip=150-0002
+first_name=zhang
+mc_fee=56
+address_country_code=JP
+address_name=zhang yang
+notify_version=3.7
+custom=
+payer_status=unverified
+business=zhangyanghy-facilitator@yahoo.com.cn
+address_country=Japan
+address_city=Shibuya-ku
+quantity=1
+verify_sign=AiOwUi98Pkmmd94TMnZXdBE733NeA5PbwfiyaB6-vNpxXXS0uWsnYZZI
+payer_email=zhangyanghy@hotmail.com
+txn_id=968012862L420221D
+payment_type=instant
+last_name=yang
+address_state=Tokyo
+receiver_email=zhangyanghy-facilitator@yahoo.com.cn
+payment_fee=
+receiver_id=AKQ4R6R925MTY
+txn_type=web_accept
+item_name=SIGMA SD1000
+mc_currency=JPY
+item_number=
+residence_country=JP
+test_ipn=1
+handling_amount=0
+transaction_subject=SIGMA SD1000
+payment_gross=
+shipping=0
+ipn_track_id=287a25b41384c
+cmd=_notify-validate
+****************************************************************************************************
+10 Apr 2013 12:49:36 [IPNListner.php] Received IPN,  TX ID : 5S108981K6229491N
+10 Apr 2013 12:49:36 [IPNListner.php] Sending IPN values:
+mc_gross=399
+protection_eligibility=Eligible
+address_status=confirmed
+payer_id=WCVNGLKEC42QA
+tax=0
+address_street=1 Main St
+payment_date=19:49:52 Apr 09, 2013 PDT
+payment_status=Completed
+charset=windows-1252
+address_zip=95131
+first_name=z
+mc_fee=52
+address_country_code=US
+address_name=z y
+notify_version=3.7
+custom=
+payer_status=verified
+business=zhangyanghy-facilitator@yahoo.com.cn
+address_country=United States
+address_city=San Jose
+quantity=1
+verify_sign=AVY3qKe3G3AcqOZSO1.w9rAOweo5Aq4MpC2O6H9Bqx7UUfKHjJBetzkD
+payer_email=zhangyanghy@yahoo.com
+txn_id=5S108981K6229491N
+payment_type=instant
+last_name=y
+address_state=CA
+receiver_email=zhangyanghy-facilitator@yahoo.com.cn
+payment_fee=
+receiver_id=AKQ4R6R925MTY
+txn_type=web_accept
+item_name=SIGMA SD1000
+mc_currency=JPY
+item_number=
+residence_country=US
+test_ipn=1
+handling_amount=0
+transaction_subject=SIGMA SD1000
+payment_gross=
+shipping=0
+ipn_track_id=287a25b41384c
+cmd=_notify-validate
+--------------------
+10 Apr 2013 12:49:38 [IPNListner.php] IPN Post Response:
+VERIFIED
+--------------------
+10 Apr 2013 12:49:38 [IPNListner.php] IPN Post Response:
+VERIFIED
+****************************************************************************************************
+10 Apr 2013 13:49:41 [IPNListner.php] Received IPN,  TX ID : 1F817577C1779615M
+10 Apr 2013 13:49:41 [IPNListner.php] Sending IPN values:
+mc_gross=399
+protection_eligibility=Partially Eligible - INR Only
+address_status=unconfirmed
+payer_id=8F3BTEE9XTVK4
+tax=0
+address_street=Nishi 4-chome, Kita 55-jo, Kita-ku
+payment_date=21:49:38 Apr 09, 2013 PDT
+payment_status=Completed
+charset=windows-1252
+address_zip=150-0002
+first_name=test
+mc_fee=56
+address_country_code=JP
+address_name=test test
+notify_version=3.7
+custom=
+payer_status=unverified
+business=zhangyanghy-facilitator@yahoo.com.cn
+address_country=Japan
+address_city=Shibuya-ku
+quantity=1
+verify_sign=Aego92kmfnLJm.XFWhgqYI96FqSJA-8bb70ueKPBZ-5ZIjS2q2LzxK12
+payer_email=zy@osbay.com
+txn_id=1F817577C1779615M
+payment_type=instant
+last_name=test
+address_state=Tokyo
+receiver_email=zhangyanghy-facilitator@yahoo.com.cn
+payment_fee=
+receiver_id=AKQ4R6R925MTY
+txn_type=web_accept
+item_name=SIGMA SD1000
+mc_currency=JPY
+item_number=
+residence_country=JP
+test_ipn=1
+handling_amount=0
+transaction_subject=SIGMA SD1000
+payment_gross=
+shipping=0
+ipn_track_id=92fad93a9974d
+cmd=_notify-validate
+--------------------
+10 Apr 2013 13:49:43 [IPNListner.php] IPN Post Response:
+VERIFIED
+****************************************************************************************************
+10 Apr 2013 18:02:13 [IPNListner.php] Received IPN,  TX ID : 59V85525RS287603W
+10 Apr 2013 18:02:13 [IPNListner.php] Sending IPN values:
+mc_gross=399
+protection_eligibility=Eligible
+address_status=confirmed
+payer_id=UBE9PUHABZ6BC
+tax=0
+address_street=1 Main St
+payment_date=02:16:40 Apr 09, 2013 PDT
+payment_status=Completed
+charset=windows-1252
+address_zip=95131
+first_name=zhang
+mc_fee=52
+address_country_code=US
+address_name=zhang yang
+notify_version=3.7
+custom=
+payer_status=verified
+business=takaya.tomose-facilitator@tas-japan.net
+address_country=United States
+address_city=San Jose
+quantity=1
+verify_sign=AEFKFplVMMh92NC40iL9ITFjTZejA.rElTQNdWth02D1SvB5FxdwQpDf
+payer_email=zhangyang@osbay.com
+txn_id=59V85525RS287603W
+payment_type=instant
+last_name=yang
+address_state=CA
+receiver_email=takaya.tomose-facilitator@tas-japan.net
+payment_fee=
+receiver_id=DLQJBEW3NG59Y
+txn_type=web_accept
+item_name=SIGMA SD1000
+mc_currency=JPY
+item_number=
+residence_country=US
+test_ipn=1
+handling_amount=0
+transaction_subject=SIGMA SD1000
+payment_gross=
+shipping=0
+ipn_track_id=bf95c752a4ac3
+cmd=_notify-validate
+--------------------
+10 Apr 2013 18:02:15 [IPNListner.php] IPN Post Response:
+VERIFIED

@@ -1,0 +1,6 @@
+#!/bin/bash
+#yum install -y httpd
+yum groupinstall -y "Web Server" "MySQL Database" "PHP Support"
+#yum install -y httpd24 php56 mysql55-server php56-mysqlnd
+yum install -y php-mysql
+

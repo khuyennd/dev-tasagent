@@ -1,0 +1,242 @@
+	<!-- right content start -->
+            <div class="left right_content_outer">
+            	<form method="post" action="searchhotel.php" name="searchFrm" id="searchFrm" onsubmit="return onsubmit_search_hotelplan_frm()">
+            	<input type="hidden" name="search" value="1" />
+				<input type="hidden" id="SortBy" name="SortBy" value="{$searchForm.SortBy}" />
+				<input type="hidden" id="SortOrder" name="SortOrder" value="{$searchForm.SortOrder}" />
+                <!-- search conditon start -->
+                <div class="srch_condition_div">
+                    <div class="srch_con">
+                        <label>{l s='Area/City'}</label>
+                        <select class="select_class" onchange="return OnSelectArea();" id="selarea" name="AreaId">
+                            <option value="0">{l s='Area Select'}</option>
+                            {foreach from=$areaList item=item name=item}
+                        	<option value="{$item.AreaId}" {if $search_form.AreaId == $item.AreaId}selected="selected"{/if}>{$item.AreaName}({$item.HotelNum})</option>
+                            {/foreach}
+                        </select>
+                        <select class="select_class" name="CityId" id="selcity">
+                            <option value="0">{l s='City Select'}</option>
+                        </select>
+                        <input type="button" class="button white small" alt="reset" value="{l s='Reset'}" onclick="return onAreaReset();" />
+                    </div>
+                    <div class="clearfix"></div>
+                    
+                    <div class="srch_con">
+                        <label>{l s='Checkin'}/{l s='Checkout'}</label>
+                        <input type="text" value="{$search_form.CheckIn}" readonly="readonly" style="float:left;" name="CheckIn" id="CheckIn"  />
+                        <img src="{$img_dir}calendar_icon.jpg" alt="" width="13" class="calendar_icon" onclick="if(self.gfPop)gfPop.fPopCalendar(getById('CheckIn'), 'OnChangeStartDate(\'CheckIn\',\'CheckOut\', \'Nights\', {if (($cookie->RoleID == 2 || $cookie->RoleID == 3) && $cookie->OldLoginUserName == NULL)}1{else}0{/if})');" />
+                        <select style="float:left; margin-left:5px;" name="Nights" id="Nights" onchange="javascript:OnChangeStartDate('CheckIn','CheckOut', 'Nights' ,{if (($cookie->RoleID == 2 || $cookie->RoleID == 3) && $cookie->OldLoginUserName == NULL)}1{else}0{/if});return false;">
+                        	<!--<option value='0'>-</option>-->
+                        	{for $i = 1 to 31}
+                        		<option value={$i} {if $i == $search_form.Nights}selected="selected"{/if}>{$i}</option>
+                        	{/for}
+                        </select>
+                        <span style="display:block; float:left; margin:3px 10px 0 5px;">{l s='Nights'}</span>
+                        <input type="text" value="{$search_form.CheckOut}" readonly="readonly" style="float:left;" name="CheckOut" id="CheckOut" />
+                        <img src="{$img_dir}calendar_icon.jpg" alt="" width="13" class="calendar_icon"  onclick="if(self.gfPop)gfPop.fPopCalendar(getById('CheckOut'), 'OnChangeEndDate(\'CheckIn\',\'CheckOut\', \'Nights\', {if (($cookie->RoleID == 2 || $cookie->RoleID == 3) && $cookie->OldLoginUserName == NULL)}1{else}0{/if})');"  />
+                    </div>
+                    <div class="clearfix"></div>
+                    
+                    <div class="srch_con" id="div_room_type">
+                        <label>{l s='Room Type'}</label>
+                        {foreach from=$roomTypeList item=roomType name=roomType}
+                        	<select class="select_type" name="RoomType_{$roomType.RoomTypeId}">
+                        		<option value="0">{l s=$roomType.RoomTypeName}</option>
+                        		{for $i=1 to 10}
+                        		<option value={$i} {if $i == $search_form.RoomTypeVals[$roomType.RoomTypeId]}selected="selected"{/if}>{$i}</option>
+                        		{/for}
+	                     	</select>
+                        {/foreach}
+                    </div>
+                    <div class="clearfix"></div>
+                    
+                    <div class="left srch_con">
+                        <label>{l s='Hotel Category'}</label>
+                        <select class="select_class" name="HotelClassId" id="HotelClassId">
+                            <option value="0">{l s='Show All'}</option>
+                            {foreach from=$classList item=item name=item}
+                            	<option value="{$item.HotelClassId}" {if $item.HotelClassId == $search_form.HotelClassId}selected="selected"{/if}>{l s=$item.HotelClassName}</option>
+                            {/foreach}
+                        </select>
+                    </div>
+                    
+                    <div class="left srch_con">
+                        <label>{l s='Hotel name'}</label>
+                        <input type="text" value="{$search_form.HotelName}" name="HotelName" />
+                    </div>
+                    <div class="clearfix"></div>
+                    
+                    <div class="srch_btn">
+						<input type="submit" name="search" value="{l s='Search Now'}" class="button orange medium" alt="search now"/>
+                    </div>
+                </div>
+                <!-- search conditon end -->
+                </form>
+                </form>
+                <!-- Information start -->
+                <div class="home_info_div">
+                    <div class="left gray_common_border_box" style="width:49%;min-height:200px;">
+                        <div class="title_bar">
+                            <span class="orange_color">{l s='Promotion'} {l s='Information'}</span>
+                            <div class="right">
+                             <a href="promotionlist.php?type=0"><input type="button" class="more_btn" value="{l s='more'}"/></a>
+                            </div>
+                        </div>
+                        <div class="content_box">
+                        <ul>
+						{foreach $homePromotionList as $pro}
+							<li><a class="news_title_li" href="promotiondetail.php?PromotionId={$pro.PromotionId}" ><span class="darkgray">[{$pro.CreateDate}]</span>&nbsp;&nbsp;{$pro.Title}</a></li>
+						{/foreach}
+						</ul>
+						<div class="clearfix"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="right gray_common_border_box" style="width:49%;min-height:200px;">
+                    	<div class="title_bar">
+                        	<span class="orange_color">{l s='News'}/{l s='Events'}</span>
+                            <div class="right">
+                             <a href="promotionlist.php?type=1"><input type="button" class="more_btn" value="{l s='more'}"/></a>
+                            </div>
+                        </div>
+                        <div class="content_box">
+                        <ul>
+						{foreach $homeEventList as $evt}
+							<li><a class="news_title_li" href="promotiondetail.php?PromotionId={$evt.PromotionId}"><span class="darkgray">[{$evt.UpdateDate}]</span>&nbsp;&nbsp;{$evt.Title}</a></li>
+						{/foreach}
+						</ul>
+						<div class="clearfix"></div>
+                        </div>						
+                    </div>
+                    <div class="clearfix"></div>
+                    
+                    <div class="gray_common_border_box">
+                    	<div class="gray_tabs" id = "popular_area_list_div">
+                        	<div class="title_bar">
+                            	<span class="orange_color">{l s='Popular'}{l s='Hotel'}</span>
+                            </div>
+                            <ul>
+                            	{foreach from=$homeAreaList item=item name=item}                        			
+                        	 		{if $item.AreaId == 3}
+									<li class="on" id="popular_li_{$item.AreaId}"><a href="javascript:reloadPopHotel({$item.AreaId}, this); ">{$item.AreaName}</a></li>	
+									{else}
+									<li class="" id="popular_li_{$item.AreaId}"><a href="javascript:reloadPopHotel({$item.AreaId}, this); ">{$item.AreaName}</a></li>	
+									{/if}
+                    			{/foreach}
+                            </ul>
+                       </div>
+                        <p class="home_news_title"> </p>
+                        <div style="float:right; margin-top:-25px;">
+                       
+                    	</div>
+                        
+                        <div class="pophotel_outer" id="pophotel_div">
+                            {include file="$tpl_dir./homepage_popitem.tpl" popularList=$popularList}
+                        </div>
+                        <div class="clearfix"></div>
+                    </div> 
+                </div>
+                <!-- Information end -->
+            </div>
+            <!-- right content end -->
+            <div class="clearfix"></div>
+            <script>
+            <!--
+            	$(document).ready(function(){
+            		
+            		OnSelectArea({$search_form.CityId});
+            	});
+            	
+            	function setSortValue(sortBy, sortOrder)
+            	{
+            		$("#SortBy").val(sortBy);
+            		$("#SortOrder").val(sortOrder);
+            		
+            		if (onsubmit_search_hotelplan_frm())
+            			$("#searchFrm").submit();
+            	}
+            	
+            	function onsubmit_search_hotelplan_frm()
+            	{
+            		/*if ($("#selarea option:selected").val() == 0)
+            		{
+            			alert('{l s='Please select area!'}');
+            			$("#selarea").focus();
+            			return false;
+            		}
+            		if ($("#selcity option:selected").val() == 0)
+            		{
+            			alert('{l s='Please select city!'}');
+            			$("#selcity").focus();
+            			return false;
+            		}*/
+            		
+            		{if ($cookie->RoleID == 2 || $cookie->RoleID == 3)}
+                        if ($("#CheckIn").val() == '')
+                        {
+                            alert('{l s='Please select check in date!'}');
+                            $("#CheckIn").focus();
+                            return false;
+                        }
+
+                        if ($("#CheckOut").val() == '')
+                        {
+                            alert('{l s='Please select check out date!'}');
+                            $("#CheckIn").focus();
+                            return false;
+                        }
+
+                        var roomTypeSelected = false;
+                        $('#div_room_type select.select_type option:selected').each(function (i, obj){
+                            if (0 != $(obj).val())
+                            {
+                                roomTypeSelected = true;
+                            }
+                        });
+
+                        if (!roomTypeSelected)
+                        {
+                            alert('{l s='Please select room type!'}');
+                            return false;
+                        }
+                    {else}
+                        var roomTypeSelected = false;
+                        $('#div_room_type select.select_type option:selected').each(function (i, obj){
+                            if (0 != $(obj).val())
+                            {
+                                roomTypeSelected = true;
+                            }
+                        });
+
+                        if ($("#CheckIn").val() != '' && $("#CheckOut").val() != '')
+                        {
+                            if (!roomTypeSelected)
+                            {
+                                alert('{l s='Please select room type!'}');
+                                return false;
+                            }
+                        }
+
+                        if (roomTypeSelected)
+                        {
+                            if ($("#CheckIn").val() == '' || $("#CheckOut").val() == '')
+                            {
+                                alert('{l s='Please select CheckIn/CheckOut day!'}');
+                                return false;
+                            }
+                        }
+
+            		{/if}
+            		
+            		return true;
+            	}
+            	
+            	function reloadPopHotel(areaid) {
+            		$('#pophotel_div').load("index.php?getPopHotel&areaid=" + areaid);
+            		// $(alink_obj).parents().pa
+            		$('#popular_area_list_div li').attr('class', '');
+            		$('#popular_li_' + areaid).attr('class', 'on');
+            		//$(alink_obj).closest('li').attr('class', 'on');
+            	}
+            // -->
+            </script>

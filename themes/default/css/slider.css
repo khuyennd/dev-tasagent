@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+#gallery {
+}
+  /*#descriptions {
+    position: relative;
+    height: 50px;
+    background: #EEE;
+    margin-top: 10px;
+    width: 640px;
+    padding: 10px;
+    overflow: hidden;
+  }
+    #descriptions .ad-image-description {
+      position: absolute;
+    }
+      #descriptions .ad-image-description .ad-description-title {
+        display: block;
+      }*/
+.lad_gallery {
+  width: 133px;
+  position:relative;
+}
+.lad_gallery .lad_image_wrapper{
+	overflow: hidden;
+	background:#f0f0f0;
+	width:160px;
+	height:160px;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+}
+.rad_gallery{
+	width:615px;
+	margin-top:5px;
+	margin-left:20px;
+}
+.rad_gallery .rad_image_wrapper{
+	width:auto;
+	height: 82px;
+	position: relative;
+	overflow: hidden;
+	margin:0 5px;
+	padding-left:5px;
+
+}
+.rad_gallery .rad_image_wrapper_w{
+	width:525px;
+	height: 82px;
+	position: relative;
+	overflow: hidden;
+	margin:0 5px;
+}
+
+.rad_gallery .rad_image_wrapper .rad_thumb_list li{
+	float:left;
+}
+.rad_gallery,.rad_thumb_list{position:absolute}
+.rad_thumb_list li{ display:inline-block; overflow:hidden;margin-right:5px;width:80px;height:60px;overflow:hidden;}
+
+.rad_gallery .rad_image_wrapper .rad_thumb_list_l li{
+	float:left;width:80px;height:60px;overflow:hidden;
+}
+.rad_gallery,.rad_thumb_list_l{}
+.rad_thumb_list_l li{ display:inline-block; overflow:hidden;margin-right:5px;}
+
+
+.rad_gallery_nav{
+	float:left;
+	margin-top:20px;
+	z-index: 99;
+}
+.lad_gallery .lad_image_wrapper .lad_loader {
+	position: absolute;
+	z-index: 10;
+	top: 48%;
+	left: 48%;
+	border: 1px solid #CCC;
+}
+.lad_gallery .lad_image_wrapper .lad_next {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 25%;
+	height: 100%;
+	cursor: pointer;
+	display: block;
+	z-index: 100;
+}
+.lad_gallery .lad_image_wrapper .lad_prev {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 25%;
+	height: 100%;
+	cursor: pointer;
+	display: block;
+	z-index: 100;
+}
+.ad_gallery .ad_image_wrapper .ad_prev .ad_prev_image, .ad_gallery .ad_image_wrapper .ad_next .ad_next_image {
+	background: url(../img/img_prev.png.png);
+	width: 30px;
+	height: 30px;
+	display: none;
+	position: absolute;
+	top: 47%;
+	left: 0;
+	z-index: 101;
+}
+.ad_gallery .ad_image_wrapper .ad_next .ad_next_image {
+	background: url(../img/img_next.png);
+	width: 30px;
+	height: 30px;
+	right: 0;
+	left: auto;
+}
+.ad_gallery .ad_image_wrapper .ad_image {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	z-index: 9;
+}
+
+.ad_gallery .ad_image_wrapper .ad_image .ad_image_description {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding: 7px;
+	text-align: left;
+	width: 100%;
+	z-index: 2;
+	background: url(../img/opa75.png);
+	color: #000;
+}
+* html .ad_gallery .ad_image_wrapper .ad_image .ad_image_description {
+	background: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (enabled=true, sizingMethod=scale, src='opa75.png');
+}
+.ad_gallery .ad_image_wrapper .ad_image .ad_image_description .ad_description_title {
+	display: block;
+}
+.ad_gallery .ad_controls {
+	height: 20px;
+}
+.ad_gallery .ad_info {
+	float: left;
+}
+.ad_gallery .ad_slideshow_controls {
+	float: right;
+}
+.ad_gallery .ad_slideshow_controls .ad_slideshow_start, .ad_gallery .ad_slideshow_controls .ad_slideshow_stop {
+	padding-left: 5px;
+	cursor: pointer;
+}
+.ad_gallery .ad_slideshow_controls .ad_slideshow_countdown {
+	padding-left: 5px;
+	font-size: 0.9em;
+}
+.ad_gallery .ad_slideshow_running .ad_slideshow_start {
+	cursor: default;
+	font-style: italic;
+}
+.ad_gallery .ad_nav {
+	width: 100%;
+	position: relative;
+}
+.ad_gallery .ad_forward, .ad_gallery .ad_back {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	z-index: 10;
+}
+/* IE 6 doesn't like height: 100% */
+/** html .ad-gallery .ad-forward, .ad-gallery .ad-back {
+  height: 100px;
+}
+.ad-gallery .ad-back {
+  cursor: pointer;
+  left: -20px;
+  width: 13px;
+  display: block;
+  background:url(../img/ad_scroll_back.png) 0px 22px no-repeat;
+}
+.ad-gallery .ad-forward {
+  cursor: pointer;
+  display: block;
+  right: -20px;
+  width: 13px;
+  background: url(../img/ad_scroll_forward.png) 0px 22px no-repeat;
+}
+.ad-gallery .ad-nav .ad-thumbs {
+  overflow: hidden;
+  width: 100%;
+}
+  .ad-gallery .ad-thumbs .ad-thumb-list {
+	float: left;
+	width: 9000px;
+	list-style: none;
+  }
+	.ad-gallery .ad-thumbs li {
+	  float: left;
+	  padding-right: 5px;
+	}
+	  .ad-gallery .ad-thumbs li a {
+		display: block;
+	  }
+		.ad-gallery .ad-thumbs li a img {
+		  border: 3px solid #CCC;
+		  display: block;
+		}
+		.ad-gallery .ad-thumbs li a.ad-active img {
+		  border: 3px solid #616161;
+		}*/
+/* Can't do display none, since Opera won't load the images then */
+.ad-preloads {
+	position: absolute;
+	left: -9000px;
+	top: -9000px;
+}
+
+/* page control */
+.pagination{
+	position:absolute;
+	top:175px;
+	left:65px;
+	vertical-align:top;
+	line-height:0px;
+}
+.pagination ul li{
+	float:left;
+	display:none;
+}
+.pagination .current a{
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+}
+
+
+#bigimage{
+	position:absolute;
+	z-index:100;
+}
+.hotel_photo1{display:table-cell;width:160px;height:160px;overflow:hidden;background:#f1f1f1;text-align:center; vertical-align:middle;margin:auto}
+

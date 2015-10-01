@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+*{
+	padding:0;
+	margin:-0;
+}
+body{ }
+img{ border:none; }
+ul,ol,li,em,strong,p { list-style: none;}
+
+a{
+	text-decoration: none;
+	color: #2d69a9;
+	outline: none;
+	cursor:pointer;
+}
+a:hover{
+	text-decoration:none;
+	filter:alpha(opacity=70); 
+	opacity:0.7;
+}
+.clearfix{
+	clear: both;
+	height: 0;
+}
+.header a {
+	color: #000000;
+	}
+	
+.left{ float:left;}
+.right{ float:right;}
+.txtleft{ text-align:left;}
+.txtright{ text-align:right;}
+.txtcenter{ text-align:center;}
+.hidden{ display:none;}
+.show{ display:block;}
+.bold{ font-weight:bold;}
+.normal{ font-weight:normal;}
+.underline{text-decoration:underline;}
+
+.font14{ font-size:14px;}
+.font16{ font-size:16px;}
+.font18{ font-size:18px;}
+
+.red{ color:#ff0000;}
+.blue{ color:#0000ff;}
+.green{color:#00ff00}
+.darkred{ color:#bf0e01;}
+.darkblue{ color:#0000bf;}
+.darkgreen{color:#02bf06}
+
+.white_color{ color:#FFF;}
+.gray{ color:#CCC;}
+.darkgray{ color:#666;}
+.black{ color:#000;}
+.orange_color{ color:#F60;}
+.lightgreen{ background-color:#ECF1E0;}
+.italic {font-style:italic;}
+
+.map_yellow{background-color:#ffed7b;}
+.map_orange{background-color:#ffbe6b;}
+.map_green{background-color:#b4c67b;}
+.map_blue{background-color:#42bfed;}
+.map_red{background-color:#ffaa7e;}
+
+.gray_bg{background:#f8f8f8;}
+
+
+table { border-collapse:collapse}
+
