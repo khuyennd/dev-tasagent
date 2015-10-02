@@ -821,7 +821,7 @@ class  RoomPlan extends ObjectModel
 		if ($order_by != '')
 					$sql .= ', '.$order_by;
 		else
-					$sql .=', B.`ShowOrder` ASC';
+					$sql .=', C.`RoomPlanId` ASC';
 				
 	    //echo $sql;
 		$res = Db::getInstance()->ExecuteS($sql);
@@ -829,7 +829,7 @@ class  RoomPlan extends ObjectModel
 		{
 			return null;
 		}
-		
+
 		// indexed by hotel id
 		$search_result = array();
 		
