@@ -18,7 +18,7 @@
         pages => The number of pages you want to parse. (default is 10, maximum of 100)     
         start => The page to start from. Default is 1
     */
-
+    echo "aaaa";
     $servername = "localhost";
     $username = "root";
     $password = "chienva";
