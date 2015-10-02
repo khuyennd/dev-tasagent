@@ -170,7 +170,7 @@ $_LANG['Check-IN'] = "チェックイン";
 $_LANG['Check-Out'] = "チェックアウト";
 $_LANG['Detail'] = "詳細";
 $_LANG['Invoice'] = "請求書";
-$_LANG['Voucher'] = "領収証";
+$_LANG['Voucher'] = "Voucher";
 
 $_LANG['Are you confirm to change?'] = "変更してよろしいでしょうか？";
 
