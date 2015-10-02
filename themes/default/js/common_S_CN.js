@@ -119,7 +119,7 @@ function openPopup(id, left, top){
     if (top == undefined) top = $('#'+id).height();
 
 	if (left != undefined){
-        $('#'+id).attr("style","position:fixed; top: 50%; left: 50%; margin-left:-"+left/2+"px;margin-top:-"+top/2+"px;");
+        $('#'+id).attr("style","position:fixed; top: 40%; left: 45%; margin-left:-"+left/2+"px;margin-top:-"+top/2+"px;");
 	}
 	//var orgZIndex = $('#my_maskLayer').css("z-index");	
 	$('#'+id).css("z-index", 301 );

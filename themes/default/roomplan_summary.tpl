@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="themes/default/css/lightbox.css">
 <body style="background-color:#EBEBEB;">
 	<table class="yellow" style="margin-top:0px;">
     	<tr>
@@ -9,7 +10,9 @@
             <td>
             	<!--{count($roomplan_summary['RelImages'])}-->
                 {foreach from=$roomplan_summary['RelImages'] item=relimage}
-                	 <div style="background:url({$relimage.img_path}) no-repeat center center;width:100px;height:75px;overflow:hidden;background-size:{$relimage.img_width}px {$relimage.img_height}px;margin-right:10px;float:left"></div> 
+                    <a class="example-image-link" href="{$relimage.img_path}" data-lightbox="example-set">
+                        <img class="example-image" src="{$relimage.img_path}" alt="" style="width:100px; height: 75px; margin-right: 10px; float:left"/>
+                    </a>
                 {/foreach}
             </td>
         </tr>
@@ -29,3 +32,5 @@
         </tr>
     </table>
 </body>
+
+<script src="themes/default/js/lightbox.js"></script>
