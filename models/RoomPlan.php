@@ -910,7 +910,7 @@ class  RoomPlan extends ObjectModel
 						$h2 = 75;$w2 = intval($width / $ratio2); 
 					}
 				}
-				$pos = strpos($filepath, "/asset");
+				$pos = strpos($filepath, "asset");
 				$new_roomplan['img_path'] = substr($filepath, $pos);
 			}
 			$new_roomplan['img_width'] = $w2;$new_roomplan['img_height'] = $h2;
@@ -1037,7 +1037,7 @@ class  RoomPlan extends ObjectModel
 					$h2 = 75;$w2 = intval($width / $ratio2); 
 				}
 			}
-			$pos = strpos($filepath, "/asset");
+			$pos = strpos($filepath, "asset");
 			$row['img_path'] = substr($filepath, $pos);
 			
 			$row['img_width'] = $w2;$row['img_height'] = $h2;

@@ -914,7 +914,7 @@ table.roomplan_header_comment td{text-align:left;padding-left:2px;}
  	-webkit-box-shadow: 0 0 5px #ccc;
  	box-shadow: 0 0 8px #ccc;
 	background:#fff;
-	width:500px;
+	width:700px;
 	height:auto;
 	border:2px solid #ccc;
 }
@@ -1208,4 +1208,17 @@ table.roomplan_header_comment td{text-align:left;padding-left:2px;}
     display: inline-block;
     font-family:Tahoma;
     font-weight: bold;
+}
+
+
+#popup_roomplan .title {
+    font-size: 18px;
+    padding: 8px;
+}
+#popup_roomplan th {
+    width: 20%;
+    padding: 10px;
+}
+#popup_roomplan td,#popup_roomplan th{
+    font-size: 16px;
 }
